@@ -1,4 +1,4 @@
-from super_ssh.rda import Host, Client, ActionReplayer, ActionRecorder, ScreenReplayer, ScreenRecorder
+from rda.rda import Host, Client, ActionReplayer, ActionRecorder, ScreenReplayer, ScreenRecorder
 
 __all__ = ['Host', 'Client', 'ActionReplayer', 'ActionRecorder', 'ScreenReplayer', 'ScreenRecorder']
 
