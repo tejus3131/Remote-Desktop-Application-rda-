@@ -49,6 +49,14 @@ jobs:
     - name: Build package
       run: poetry build
 
+    - name: Add README file
+      run: |
+        if [ -f "${{ github.workspace }}/rda/README.md" ]; then
+          cp ${{ github.workspace }}/rda/README.md ./
+        else
+          echo "README.md file not found."
+        fi
+
     - name: Publish package
       uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
       with:
