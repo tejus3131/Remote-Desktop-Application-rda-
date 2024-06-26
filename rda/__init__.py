@@ -1,13 +1,13 @@
-from rda.rda import Host, Client, ActionReplayer, ActionRecorder, ScreenReplayer, ScreenRecorder
+from rda.rda import Server, Client, ActionReplayer, ActionRecorder, ScreenReplayer, ScreenRecorder
 
-__all__ = ['Host', 'Client', 'ActionReplayer', 'ActionRecorder', 'ScreenReplayer', 'ScreenRecorder']
+__all__ = ['Server', 'Client', 'ActionReplayer', 'ActionRecorder', 'ScreenReplayer', 'ScreenRecorder']
 
 
 import sys
 
 
-def host():
-    return Host()
+def server():
+    return Server()
 
 
 def client(code=None):
